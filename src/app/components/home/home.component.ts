@@ -18,19 +18,19 @@ export class HomeComponent implements OnInit {
   totalRecovered = 0;
   totalData : GlobalDataSummary[];
 
-  // public pieChart: GoogleChartInterface = {
-  //   chartType: GoogleChartType.PieChart,
-  //   dataTable: [
-  //     ['Task', 'Hours per Day'],
-  //     ['Work',     11],
-  //     ['Eat',      2],
-  //     ['Commute',  2],
-  //     ['Watch TV', 2],
-  //     ['Sleep',    7]
-  //   ],
-  //   //firstRowIsData: true,
-  //   options: {'title': 'Tasks'},
-  // };
+  public pieChart: GoogleChartInterface = {
+    chartType: GoogleChartType.PieChart,
+    dataTable: [
+      ['Task', 'Hours per Day'],
+      ['Work',     11],
+      ['Eat',      2],
+      ['Commute',  2],
+      ['Watch TV', 2],
+      ['Sleep',    7]
+    ],
+    //firstRowIsData: true,
+    options: {'title': 'Tasks'},
+  };
 
   ngOnInit(): void {
     this.getTotalData()
