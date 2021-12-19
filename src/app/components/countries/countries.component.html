@@ -1,0 +1,19 @@
+<div class="jumbotron bg-white text-center">
+    <h1 class="display-4">All Countries</h1>
+    <hr>
+    <div class="mx-auto">
+        <div class="form-group col-lg-5 mx-auto">
+            <label for="c">Select country</label>
+            <select name="" id="c" class="form-control" (change)="getCountryData($event.target.value)">
+                <option [value]="country" *ngFor="let country of allCountries">{{country}}</option>
+            </select>
+        </div>
+    </div>
+    <app-dashboard-card
+    [totalConfirmed]="totalConfirmed"
+    [totalRecovered]="totalRecovered"
+    [totalDeaths]="totalDeaths"
+    [totalActive]="totalActive"
+  ></app-dashboard-card>
+
+</div>

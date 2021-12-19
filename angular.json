@@ -24,6 +24,8 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -62,8 +64,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "covid19-tracker:build"
-          },
+            "browserTarget": "covid19-tracker:build"          },
           "configurations": {
             "production": {
               "browserTarget": "covid19-tracker:build:production"
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "covid19-tracker"
+    }
+  },
+  "defaultProject": "covid19-tracker",
+  "cli": {
+    "analytics": false
+  }
 }
